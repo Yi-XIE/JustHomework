@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AIDM7350: Web Development Tutorial</title>
+    <style>
+        /* Modern color scheme */
+        :root {
+            --primary: #2c3e50;
+            --accent: #3498db; 
+            --highlight: #f1c40f;
+            --background: #f8f9fa;
+            --text: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 40px;
+            background-color: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        /* Enhanced header styles */
+        h1 {
+            color: var(--primary);
+            border-bottom: 3px solid var(--accent);
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-align: center;
+        }
+
+        h2 {
+            color: var(--primary);
+            margin-top: 40px;
+            font-size: 2em;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        h2::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            height: 100%;
+            width: 5px;
+            background-color: var(--accent);
+            border-radius: 3px;
+        }
+
+        /* Enhanced paragraph and list styles */
+        p {
+            margin: 20px 0;
+            font-size: 1.1em;
+        }
+
+        .standout {
+            background-color: var(--highlight);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        ul, ol {
+            background-color: white;
+            padding: 20px 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        /* Enhanced link styles */
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid transparent;
+        }
+
+        a:hover {
+            border-bottom: 1px solid var(--accent);
+        }
+
+        /* Enhanced image styles */
+        img {
+            max-width: 100%;
+            border-radius: 12px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin: 20px 0;
+        }
+
+        img:hover {
+            transform: scale(1.02);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Enhanced iframe styles */
+        iframe {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin: 20px 0;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            iframe {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>AIDM7350: Web Development and Deployment</h1>
+
+    <h2>1. Heading</h2>
+    <h3>1.1 Sub Heading</h3>
+    <h4>1.1.1 Sub Sub Heading</h4>
+
+    <h2>2. Paragraph</h2>
+    <p class="standout">This is a highlighted paragraph!</p>
+    <p>This is another regular paragraph.</p>
+
+    <h2>3. Lists</h2>
+    <h3>3.1 Unordered List</h3>
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Orange</li>
+    </ul>
+
+    <h3>3.2 Ordered List</h3>
+    <ol>
+        <li>Week 1</li>
+        <li>Week 2</li>
+        <li>Week 3</li>
+    </ol>
+
+    <h2>4. Links</h2>
+    <p>Visit <a href="https://www.hkbu.edu.hk">HKBU Official Website</a></p>
+
+    <h2>5. Images</h2>
+    <h3>5.1 Add an image from a local drive</h3>
+    <img 
+        src="images/Dog.jpg" 
+        alt="Local Dog Image"
+        width="50%" 
+        height="50%"
+    >
+    
+    // ... existing code ...
+    <h3>5.2 Add an image from an URL</h3>
+    <img 
+        src="https://images.unsplash.com/photo-1536599018102-9f803c140fc1?q=80&w=1200" 
+        alt="Hong Kong Cityscape"
+        loading="lazy"
+    >
+
+    <h2>6. Video</h2>
+    <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/JZZIdehtm5U" 
+        frameborder="0" 
+        allowfullscreen>
+    </iframe>
+</body>
+</html>
